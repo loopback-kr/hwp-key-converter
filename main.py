@@ -1,3 +1,5 @@
+import os
+
 def pid2ecd(pid : str):
     hashtab = {
         # dst_block, digit_stride, char_stride
@@ -41,4 +43,5 @@ if __name__ == '__main__':
         print('Converted key is :', pid2ecd(input_key))
     else:
         print('Converted key is :', ecd2pid(input_key))
-    input()
+    
+    os.system("pause")
